@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "start": "vite --open"
+    "start": "vite --open",
+    "build": "npm run build:app && npm run build:style",
+    "build:app": "vite build --config vite.config.app.ts",
+    "build:style": "vite build --config vite.config.style.ts"
   },
   "dependencies": {
     "react": "18.2.0",
